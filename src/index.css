@@ -1,0 +1,59 @@
+body {
+  background-color: #242424;
+  color: white;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  width: 150px;
+  height: 60px;
+  font-size: 3rem;
+  background-color: transparent;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  transition: 200ms ease;
+}
+
+button.light {
+  background-image: url("./assets/images/sky.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 700;
+}
+
+button.dark {
+  background-image: url("./assets/images/night-sky.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 700;
+}
+
+.fa-moon,
+.fa-sun {
+  transition: 200ms linear;
+}
+
+.fa-sun {
+  position: absolute;
+  transform: translate(10px, -50%);
+}
+
+.fa-moon {
+  position: absolute;
+  transform: translate(-60px, -50%);
+}
+
+.theme-switch {
+  display: flex;
+  justify-content: center;
+}
