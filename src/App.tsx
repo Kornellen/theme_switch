@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./App.css";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
@@ -29,7 +28,7 @@ function App() {
                   onClick={handleChangeTheme}
                   className={`theme-button ${theme}`}
                 >
-                  {theme === "light" ? (
+                  {theme === "dark" ? (
                     <FontAwesomeIcon icon={faMoon} />
                   ) : (
                     <FontAwesomeIcon icon={faSun} />
